@@ -1,0 +1,26 @@
+<?php 
+	session_start();
+	if(isset($_SESSION["pesan"]))
+		echo $_SESSION["pesan"];
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form Login</title>
+</head>
+<body>
+	<center>
+		<form action="hal1.php" method="POST" enctype="multipart/form-data">
+			<h2> Kaltara Cerdas</h2>
+			<h4> Membangun kaltara melalui pendidikan</h4>
+			Username		: <input type="text" name="name" ><br><br>
+			Password		: <input type="password" name="password" ><br><br>
+			Nim			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="number" name="nomor"><br><br>
+
+			
+			<input type="submit" name="kirim"  value="Kirim" style="width : 200px" >
+
+		</form>
+	</center>
+</body>
+</html>
